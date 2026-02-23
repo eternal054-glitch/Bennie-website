@@ -123,6 +123,32 @@ footer {
     .image-card { width: 90%; }
     .video-center video { width: 95%; }
 }
+/* SURVEY SECTION */
+.survey-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    margin-top: 60px;
+}
+.survey-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.survey-btn {
+    display: inline-block;
+    padding: 15px 35px;
+    font-size: 1.1rem;
+    background: #a8d8ff;
+    color: #0f2027;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+.survey-btn:hover {
+    background: #fff8e7;
+    transform: scale(1.05);
+}
 </style>
 </head>
 
@@ -297,7 +323,38 @@ footer {
         </video>
     </div>
 </section>
+<section class="survey-section">
+    <h2>Your Voice Matters</h2>
+    <p>Do you have a minute to complete our short mental health awareness survey?</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdU8BiBSJQlP05m_VYKj3z04wsmemvGBhMfkWP_8XFzGLtoTA/viewform" target="_blank" class="survey-btn">
+        Take the Survey
+    </a>
+</section>
 
+<!-- FOOTER -->
+<footer>
+    © 2026 Meraki | Mental Health Awareness Project
+</footer>
+
+<!-- AUTOPLAY ON SCROLL SCRIPT -->
+<script>
+const videos = document.querySelectorAll('.auto-video');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.play();
+        } else {
+            entry.target.pause();
+        }
+    });
+}, { threshold: 0.5 });
+
+videos.forEach(video => observer.observe(video));
+</script>
+
+</body>
+</html>
 <!-- FOOTER -->
 <footer>
     © 2026 Meraki | Mental Health Awareness Project
