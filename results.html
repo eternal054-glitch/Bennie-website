@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Survey Results | Meraki</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom right, #a8d8ff, #0f2027);
+    color: #f5f5dc;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* TITLE */
+h1 {
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    color: #fff8e7;
+}
+
+/* GRID CONTAINER */
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* IMAGE STYLE */
+.result-img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease;
+}
+
+.result-img:hover {
+    transform: scale(1.03);
+}
+
+/* BACK BUTTON */
+.back-btn {
+    display: inline-block;
+    margin-top: 60px;
+    padding: 14px 35px;
+    background: #a8d8ff;
+    color: #0f2027;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.back-btn:hover {
+    background: #fff8e7;
+    transform: scale(1.05);
+}
+</style>
+</head>
+
+<body>
+
+<h1>Survey Results</h1>
+
+<div class="results-grid">
+    <img src="result1.png" class="result-img">
+    <img src="result2.png" class="result-img">
+    <img src="result3.png" class="result-img">
+    <img src="result4.png" class="result-img">
+    <img src="result5.png" class="result-img">
+    <img src="result6.png" class="result-img">
+    <img src="result7.png" class="result-img">
+    <img src="result8.png" class="result-img">
+</div>
+
+<a href="index.html" class="back-btn">Back to Home</a>
+
+</body>
+</html>
