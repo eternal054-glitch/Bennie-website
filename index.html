@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meraki | True Expression of Who You Are</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom right, #a8d8ff, #0f2027);
+    color: #f5f5dc;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 100px 20px;
+    background: rgba(0, 0, 0, 0.6);
+}
+header h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    color: #fff8e7;
+}
+header p {
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+/* SECTION */
+section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #fff8e7;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+}
+
+/* VIDEO */
+.video-center {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.video-center video {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+/* IMAGE CARD CONTAINER */
+.card-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* IMAGE CARD */
+.image-card {
+    position: relative;
+    width: 300px;
+    height: 380px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.image-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(168,216,255,0.7);
+}
+.card-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    color: #fff8e7;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.card-description {
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    color: #f5f5dc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    transition: bottom 0.4s ease;
+}
+.image-card:hover .card-description { bottom: 0; }
+.image-card:hover .card-title { opacity: 0.3; }
+
+/* Remove link styles */
+.card-container a { text-decoration: none; color: inherit; }
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: black;
+    color: #f5f5dc;
+    margin-top: 60px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    .image-card { width: 90%; }
+    .video-center video { width: 95%; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>Meraki</h1>
+    <p><em>True Expression of Who You Are</em></p>
+    <p>Mental health is not weakness. It is part of being human.</p>
+</header>
+
+<!-- VIDEO 1: Top -->
+<section>
+    <h2>What is Mental Health?</h2>
+    <div class="video-center">
+        <video class="auto-video" muted playsinline>
+            <source src="mentalhealth1.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+
+<!-- PT1: Introduction -->
+<section>
+    <h2>Introduction to Mental Health</h2>
+    <p>Mental health problems encompass the mind and emotional wellbeing of people across all ages. According to the World Health Organization (2025), more than 1 billion people worldwide, or approximately one in eight individuals, are living with a mental health disorder.</p>
+    <p>We have chosen this social issue because we have seen how people suffer from these mental health problems. By choosing this topic, we hope more people are widely aware of what a mental health problem is, as well as its causes and effects. This may also help motivate them with consistency and faith to become a better version of themselves so that they may attain peace and happiness.</p>
+</section>
+
+<!-- EFFECTS -->
+<section>
+    <h2>Effects of Mental Health</h2>
+    <div class="card-container">
+        <article class="image-card" style="background-image:url('effect1.jpg');">
+            <div class="card-title">Sleep Disruption</div>
+            <div class="card-description">Mental health issues can disrupt sleep patterns and lead to insomnia.</div>
+        </article>
+        <article class="image-card" style="background-image:url('effect2.jpg');">
+            <div class="card-title">Relationship Strain</div>
+            <div class="card-description">Emotional instability can cause stress in personal relationships.</div>
+        </article>
+        <article class="image-card" style="background-image:url('effect3.jpg');">
+            <div class="card-title">Reduced Productivity</div>
+            <div class="card-description">Work and study performance can suffer due to mental health challenges.</div>
+        </article>
+        <article class="image-card" style="background-image:url('effect4.jpg');">
+            <div class="card-title">Substance Use</div>
+            <div class="card-description">Some may turn to drugs or alcohol to cope with mental health struggles.</div>
+        </article>
+        <article class="image-card" style="background-image:url('effect5.jpg');">
+            <div class="card-title">Cognitive Impairment</div>
+            <div class="card-description">Focus, memory, and decision-making can be negatively affected.</div>
+        </article>
+        <article class="image-card" style="background-image:url('effect6.jpg');">
+            <div class="card-title">Emotional Instability</div>
+            <div class="card-description">Mood swings, irritability, and anxiety can interfere with daily life.</div>
+        </article>
+        <article class="image-card" style="background-image:url('effect7.jpg');">
+            <div class="card-title">Economic Strain</div>
+            <div class="card-description">Mental health problems can lead to financial stress and work loss.</div>
+        </article>
+    </div>
+</section>
+
+<!-- VIDEO 2: Middle -->
+<section>
+    <h2>Understanding Risk and Protective Factors</h2>
+    <div class="video-center">
+        <video class="auto-video" muted playsinline>
+            <source src="mentalhealth2.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+
+<!-- CAUSES -->
+<section>
+    <h2>Causes of Mental Health Problems</h2>
+    <div class="card-container">
+        <article class="image-card" style="background-image:url('cause1.jpg');">
+            <div class="card-title">Genetic Factors</div>
+            <div class="card-description">Mental health conditions can run in families.</div>
+        </article>
+        <article class="image-card" style="background-image:url('cause2.jpg');">
+            <div class="card-title">Trauma</div>
+            <div class="card-description">Experiences like abuse or accidents can trigger mental health issues.</div>
+        </article>
+        <article class="image-card" style="background-image:url('cause3.jpg');">
+            <div class="card-title">Stress</div>
+            <div class="card-description">Chronic stress from work or life events affects emotional wellbeing.</div>
+        </article>
+        <article class="image-card" style="background-image:url('cause4.jpg');">
+            <div class="card-title">Social Isolation</div>
+            <div class="card-description">Lack of support and loneliness can worsen mental health.</div>
+        </article>
+        <article class="image-card" style="background-image:url('cause5.jpg');">
+            <div class="card-title">Physical Illness</div>
+            <div class="card-description">Chronic disease or pain can increase vulnerability to mental health problems.</div>
+        </article>
+        <article class="image-card" style="background-image:url('cause6.jpg');">
+            <div class="card-title">Substance Abuse</div>
+            <div class="card-description">Alcohol and drug use can trigger or worsen mental health conditions.</div>
+        </article>
+        <article class="image-card" style="background-image:url('cause7.jpg');">
+            <div class="card-title">Economic Pressure</div>
+            <div class="card-description">Financial insecurity and unemployment can contribute to stress and anxiety.</div>
+        </article>
+        <article class="image-card" style="background-image:url('cause8.jpg');">
+            <div class="card-title">Environmental Factors</div>
+            <div class="card-description">Living conditions, community safety, and pollution can affect mental health.</div>
+        </article>
+    </div>
+</section>
+
+<!-- IMAGE CARDS: Anxiety, Depression, Social Pressure -->
+<section>
+    <h2>Mental Health Awareness</h2>
+    <div class="card-container">
+        <a href="anxiety.html">
+            <article class="image-card anxiety" style="background-image:url('anxiety.jpg');">
+                <div class="card-title">Anxiety</div>
+                <div class="card-description">Racing thoughts, overthinking, constant worry.</div>
+            </article>
+        </a>
+        <a href="depression.html">
+            <article class="image-card depression" style="background-image:url('depression.jpg');">
+                <div class="card-title">Depression</div>
+                <div class="card-description">Persistent sadness, emotional numbness, low energy.</div>
+            </article>
+        </a>
+        <a href="social.html">
+            <article class="image-card social" style="background-image:url('social.jpg');">
+                <div class="card-title">Social Pressure</div>
+                <div class="card-description">Fear of judgment, comparison, hiding emotions.</div>
+            </article>
+        </a>
+    </div>
+</section>
+
+<!-- HISTORICAL FIGURES -->
+<section>
+    <h2>Historical Figures Affected by Mental Health</h2>
+    <div class="card-container">
+        <article class="image-card" style="background-image:url('person1.jpg');">
+            <div class="card-title">Vincent van Gogh</div>
+            <div class="card-description">Famous painter known to struggle with mental health challenges.</div>
+        </article>
+        <article class="image-card" style="background-image:url('person2.jpg');">
+            <div class="card-title">Abraham Lincoln</div>
+            <div class="card-description">16th US President who suffered from depression.</div>
+        </article>
+        <article class="image-card" style="background-image:url('person3.jpg');">
+            <div class="card-title">Sylvia Plath</div>
+            <div class="card-description">Poet and writer affected by severe depression.</div>
+        </article>
+        <article class="image-card" style="background-image:url('person4.jpg');">
+            <div class="card-title">Winston Churchill</div>
+            <div class="card-description">British Prime Minister who battled “black dog” depression.</div>
+        </article>
+        <article class="image-card" style="background-image:url('person5.jpg');">
+            <div class="card-title">Isaac Newton</div>
+            <div class="card-description">Scientist known to experience periods of anxiety and depression.</div>
+        </article>
+    </div>
+</section>
+
+<!-- VIDEO 3: End -->
+<section>
+    <h2>Building Resilience</h2>
+    <div class="video-center">
+        <video class="auto-video" muted playsinline>
+            <source src="mentalhealth3.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 Meraki | Mental Health Awareness Project
+</footer>
+
+<!-- AUTOPLAY ON SCROLL SCRIPT -->
+<script>
+const videos = document.querySelectorAll('.auto-video');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.play();
+        } else {
+            entry.target.pause();
+        }
+    });
+}, { threshold: 0.5 });
+
+videos.forEach(video => observer.observe(video));
+</script>
+
+</body>
+</html>
