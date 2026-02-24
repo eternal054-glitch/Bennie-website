@@ -8,7 +8,7 @@
 <style>
 .gallery-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
@@ -22,7 +22,6 @@
 .gallery-container img:hover {
     transform: scale(1.05);
 }
-
 /* Mobile responsive */
 @media (max-width: 768px) {
     .gallery-container {
@@ -200,16 +199,11 @@ footer {
     <h1>Meraki</h1>
 <p><em>True Expression of Who You Are</em></p>
     <p>Mental health is not weakness. It is part of being human.</p>
-    <img src="header-image.jpg" alt="Mental Health Awareness" class="header-image">
 
 <!-- VIDEO 1: Top -->
 <section>
 <!-- PT1: Introduction -->
 <section>
-
-    <div class="intro-image">
-        <img src="intro-image.jpg" alt="Mental Health Support">
-    </div>
     <h2>What is Mental Health?</h2>
     <div class="video-center">
         <video class="auto-video" muted playsinline>
@@ -230,6 +224,9 @@ footer {
 <section>
     <h2>Mental Health in Everyday Life</h2>
     <div class="gallery-container">
+        <img src="header-image.jpg" alt="Mental Health Awareness">
+        <img src="intro-image.jpg" alt="Mental Health Support">
+
         <img src="gallery1.jpg" alt="Mental Health Image 1">
         <img src="gallery2.jpg" alt="Mental Health Image 2">
         <img src="gallery3.jpg" alt="Mental Health Image 3">
