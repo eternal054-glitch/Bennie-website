@@ -6,6 +6,29 @@
 <title>Meraki | True Expression of Who You Are</title>
 
 <style>
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-container img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(168,216,255,0.4);
+    transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 .intro-image {
     text-align: center;
     margin-bottom: 30px;
@@ -175,8 +198,9 @@ footer {
 <!-- HEADER -->
 <header>
     <h1>Meraki</h1>
+<p><em>True Expression of Who You Are</em></p>
+    <p>Mental health is not weakness. It is part of being human.</p>
     <img src="header-image.jpg" alt="Mental Health Awareness" class="header-image">
-</header>
 
 <!-- VIDEO 1: Top -->
 <section>
@@ -199,6 +223,21 @@ footer {
     <h2>Introduction to Mental Health</h2>
     <p>Mental health problems encompass the mind and emotional wellbeing of people across all ages. According to the World Health Organization (2025), more than 1 billion people worldwide, or approximately one in eight individuals, are living with a mental health disorder.</p>
     <p>We have chosen this social issue because we have seen how people suffer from these mental health problems. By choosing this topic, we hope more people are widely aware of what a mental health problem is, as well as its causes and effects. This may also help motivate them with consistency and faith to become a better version of themselves so that they may attain peace and happiness.</p>
+</section>
+
+</section>
+<!-- IMAGE GALLERY SECTION -->
+<section>
+    <h2>Mental Health in Everyday Life</h2>
+    <div class="gallery-container">
+        <img src="gallery1.jpg" alt="Mental Health Image 1">
+        <img src="gallery2.jpg" alt="Mental Health Image 2">
+        <img src="gallery3.jpg" alt="Mental Health Image 3">
+        <img src="gallery4.jpg" alt="Mental Health Image 4">
+        <img src="gallery5.jpg" alt="Mental Health Image 5">
+        <img src="gallery6.jpg" alt="Mental Health Image 6">
+    </div>
+</section>
 </section>
 
 <!-- EFFECTS -->
